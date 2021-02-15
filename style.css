@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font: normal 18px 'Open Sans', sans-serif;
+    background: #ffffff;
+    color: #333;
+    min-height: 100vh;
+    
+}
+
+/* header and navigation bar */
+
+header {
+    background: rgba(255, 255, 255, 0.507);
+   
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: row;
+    /* color: white; */
+}
+
+h1 {
+    font: normal 3.5em 'Playfair Display SC', serif;
+    text-align:center;
+    color: rgb(17, 8, 8);
+}
+
+h6 {
+    font: normal 1.2em 'Playfair Display SC', serif;
+    text-align:center;
+
+}
+
+.logo{
+    margin-left: 2rem;
+}
+
+.logo h1{
+    font-size: 2.9rem;
+}
+
+.logo h6{
+    font-size: 1rem;
+}
+
+nav {
+    max-width: 800px;
+    margin: auto;
+    margin-right: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+       
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    height: 2px;
+    transform: scaleX(0);
+    background: #333;
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+}
+
+nav a:hover::after{
+    transform: scaleX(1)
+}
+
+/* Main page */
+
+.landing{
+    min-height: 100vh;
+    background-size: cover;
+    /* background-image: linear-gradient(#ffffff, #9fe1ff); */
+    background-image: url('images/bg.png');
+    background-position: center;
+    /* box-shadow: inset 0 0 100px hsla(0,0%,0%,.3); */
+}
+
+
+.name{ 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font: normal 1.2rem 'Playfair Display SC', serif;
+    text-align:center;
+}
+
+.info{
+    font-size: 1.2rem;
+    padding: 1rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    /* background-color: teal; */
+    
+}  
+
+.about h1{
+    text-decoration: underline;
+    
+}
+
+.info h6{
+    font-family:  'Open Sans';
+}
+   
+.button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+}
+
+button {
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #393838;
+    color: #393838;
+    background: none;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-size: 0.875em;
+   
+}
+
+
+.is-active {
+    background: #393838;
+    color: #fff;
+}
+
+
+.categories h1{
+    text-decoration: underline;
+}
+
+
+
+.list {
+    /* margin-left: 3.5rem; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list__item {
+    
+    margin: 2rem;
+    width: 18rem;
+    height: 18rem;
+    overflow: hidden;
+    justify-content: center;
+    background-color: rgb(183, 232, 255);
+    color: black;
+    box-shadow: 0 0 2px rgba(57, 56, 56, 0.2);
+}
+
+.list h1{
+    font-size: 3rem;
+    
+}
+
+.list h6{
+    /* color: teal; */
+}
+
+.categories{
+    width: 100%;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 0.4rem 0;
+    position: relative;
+}
+
+.copyright p{
+    font-size: 0.9rem;
+    color: rgb(187, 186, 186);
+}
