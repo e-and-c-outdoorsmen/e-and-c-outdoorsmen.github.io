@@ -412,5 +412,10 @@ button {
     .copyright p{
         font-size: 0.7rem;
     }
+    
+     .contact a{
+        font-weight: bolder;
+    }
+
         
 }
