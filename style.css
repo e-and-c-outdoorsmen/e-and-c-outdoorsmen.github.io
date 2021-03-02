@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font: normal 18px 'Open Sans', sans-serif;
+    background: #F5F5F5;
+    color: #333;
+    min-height: 100vh;
+}
+
+
+/* header and navigation bar */
+
+.mainpg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    
+}
+
+
+.logoimg{
+    filter: drop-shadow(0 0 0.5rem #000000);
+  
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+
+}
+
+h1 {
+    font: normal 3.5em 'Playfair Display SC', serif;
+    text-align:center;
+    color: rgb(17, 8, 8);
+}
+
+h6 {
+    font: normal 1.2em 'Playfair Display SC', serif;
+    text-align:center;
+
+}
+
+.logo{
+    margin-left: 2rem;
+    /* filter: drop-shadow(0 0 0.5rem #ffffff); */
+}
+
+.logo h1{
+    font-size: 2.9rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.logo h6{
+    
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+nav {
+    max-width: 800px;
+    margin: auto;
+    margin-right: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    font-weight: bold;
+}
+
+       
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    height: 2px;
+    transform: scaleX(0);
+    background: #333;
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+}
+
+nav a:hover::after{
+    transform: scaleX(1);
+}
+
+/* Main page */
+.outside{
+   padding: 1rem; 
+   box-sizing: border-box;
+   height: 100vh;
+   
+}
+
+.landing{
+    height: 100%;
+    /* #48CAE4  */
+    background: linear-gradient(110deg, #349fb4 60%, #97e4f1 60%);
+    background-position: center;
+    
+}
+
+
+.name{ 
+    display: flex;
+    padding-left: 3rem;
+    font: normal 2rem 'Playfair Display SC', serif;
+    text-align:center;
+    align-self: center;
+    font-weight: bolder;
+    filter: drop-shadow(0 0 0.5rem #000000);
+}
+
+.name h1{
+    color: white;
+    
+}
+
+.about {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+.info{
+    display: flex;
+    font-size: 1.2rem;
+    padding-left: 8rem;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    /* padding: 1rem;    */
+}  
+
+.abimg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abimg img{
+    width: 22rem;  
+    border-radius: 10%;
+}
+
+.aboutmain h1{
+    padding-top: 0rem;
+    text-decoration: none;
+    font-size: 4.5rem;
+    color: black;
+}
+
+
+.info h6{
+    padding-top: 1rem;
+    font-family:  'Open Sans';
+}
+   
+.button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+}
+
+button {
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #393838;
+    color: #393838;
+    background: none;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-size: 0.875em;
+   
+}
+
+
+.is-active {
+    background: #393838;
+    color: #fff;
+}
+
+.categories {
+    background-color: white;
+    
+}
+
+.categories h1{
+    font-size: 4.5rem;
+    text-decoration: none;
+}
+
+.list {
+    /* margin-left: 3.5rem; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list__item {
+    
+    margin: 2rem;
+    width: 18rem;
+    height: 18rem;
+    overflow: hidden;
+    justify-content: center;
+    background-color: #349fb4;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px rgba(57, 56, 56, 0.2);
+}
+
+.list h1{
+    font-size: 3rem;
+    color: white;
+}
+
+/* .contact{
+    background-color: #05668D;
+    /* background: linear-gradient(90deg, #48CAE4 50%, #90E0EF 50%);
+ } */
+
+
+.contact h1{
+    font-size: 4.5rem;
+    color: black;
+}
+
+.contact h6{
+    padding-top: 2rem;
+    font-family:  'Open Sans';
+    padding-bottom: 2rem;
+}
+
+.categories{
+    width: 100%;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 0.4rem 0;
+    position: relative;
+}
+
+.copyright p{
+    font-size: 0.8rem;
+    color: rgb(187, 186, 186);
+}
+
+/* Mobile phones */
+@media screen and (max-width: 600px){
+
+    .logo{
+        margin-left: 0.5rem;
+    }
+    
+    .logo h1{
+        font-size: 2rem;
+    }
+    
+    .logo h6{
+        font-size: 0.7rem;
+    }
+
+        
+    .mainpg{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+
+
+
+    .logoimg{
+        filter: drop-shadow(0 0 0.5rem #000000);
+    }
+
+    .logoimg img{
+        padding-top: 1rem;
+        width: 100%;
+    }
+
+    h6 {
+        font: normal 1.2em 'Playfair Display SC', serif;
+        text-align:center;
+
+    }
+
+
+    .name{ 
+        display: flex;
+        font-size: 0.7rem;
+        padding-left: 0rem;
+    }
+
+    .top-nav{
+        font-size:0.9rem;
+    }
+
+
+    nav {
+        margin-right: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.6em;
+    }
+
+    .landing{
+        background: linear-gradient(120deg, #349fb4 50%, #90E0EF 50%);
+    }
+
+   
+    .info{
+        font-size: 1rem;
+        padding: 1rem;    
+    }  
+
+
+    .aboutmain h1{
+        font-size: 2.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+
+    .about {
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .info{
+        font-size: 1rem;
+        padding-left: 0rem;
+        /* padding: 1rem;    */
+    }  
+
+    .abimg img{
+        width: 16rem;  
+        border-radius: 10%;
+    }
+    
+    
+    .info h6{
+        padding-top: 1rem;
+        font-family:  'Open Sans';
+    }
+
+
+    button {
+        margin: 0.4em;
+        padding: 0.4em;
+        font-size: 0.7em;    
+    }
+
+    .categories h1{
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .contact h1{
+        font-size: 2.5rem;
+    }
+
+    .contact h6{
+        font-size: 1rem;
+    }
+
+    .list__item {
+        
+        margin: 2rem;
+    }
+
+    .list h1{
+        font-size: 2rem;
+        
+    }
+
+    .copyright p{
+        font-size: 0.7rem;
+    }
+        
+}
