@@ -260,6 +260,10 @@ button {
     padding-bottom: 2rem;
 }
 
+  .contact a{
+        font-weight: bolder;
+    }
+
 .categories{
     width: 100%;
 }
@@ -271,6 +275,8 @@ button {
     padding: 0.4rem 0;
     position: relative;
 }
+
+
 
 .copyright p{
     font-size: 0.8rem;
